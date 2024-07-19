@@ -1,8 +1,9 @@
 :root {
     --white: #ffffff;
-    --dark: #000;
+    --dark: #8d8c8c;
     --primary: #507cf5;
     --secundary: #f1f517;
+    
 }
 
 html{
@@ -121,10 +122,96 @@ text-align: center;
 .shadow {
 box-shadow: 10px 10px 44px -3px rgba(0,0,0,0.89);
 }
-.seccion-servicios {
+.contenedor-servicios {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media (min-width:768px){
+    .contenedor-servicios{
+        flex-direction: row;
+    }
 }
 
 section h2 {
     text-align: center;
+}
+
+.seccion-servicios h3{
+    color:var(--primary)
+}
+.seccion-servicios{
+    border: 1px solid var(--dark);
+}
+.icono {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--secundary);
+    border-radius: 50%;
+    padding: 1rem;
+}
+.seccion-servicios p{
+    line-height: 2;
+}
+
+/* formulario */
+
+.formulario{
+    background-color: var(--dark);
+    width: min(80rem, 100%);
+    margin:0 auto;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+.formulario legend {
+    margin: 0 auto 2rem auto;
+    font-size: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:var(--secundary);
+}
+.container-imput{
+    margin-bottom: 1rem;
+}
+
+.container-imput label{
+    color: var(--white);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.container-imput input,
+.container-imput textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5%;
+    border:.5px solid var(--secundary);
+}
+
+.enviar{
+    width: 100%;
+}
+
+.titulo-contacto {
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    /* aplica grid 1 fila con dos columnas y dos filas mas con 1 columna */
+    .input {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto auto;
+    }
+}
+
+.container-imput:nth-child(3),
+.container-imput:nth-child(4)
+{
+    grid-column: 1/3;
 }
