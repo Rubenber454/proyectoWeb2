@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freelancer</title>
+    <link rel="icon shortcut" href="img/favicon.ico">
 
     <!-- enlaces a la tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,15 +16,15 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header>
+<header id="Inicio">
 
 <h1>Rubén Bermúdez. Web </h1>  
 
 <nav class="navegacion">
-    <a class="enlace" href="#">Inicio</a>
+    <a class="enlace" href="#Inicio">Inicio</a>
     <a class="enlace" href="#">Sobre mí</a>
-    <a class="enlace" href="#">Trabajos</a>
-    <a class="enlace" href="#">Contacto</a>
+    <a class="enlace" href="#trabajos">Trabajos</a>
+    <a class="enlace" href="#contacto">Contacto</a>
 </nav>
 <div class="banner">
 <section class="section-banner">
@@ -39,24 +40,24 @@
 
 <main>
 <div class="container shadow">
-    <section>
+    <section id="trabajos">
 <h2>Servicios</h2>
 <div class="contenedor-servicios">
 
 <section class="seccion-servicios">
     <h3>Diseño web</h3>
     <img class="icono" src="img/seeding.svg" alt="icono de planta">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptate, itaque accusantium cupiditate earum velit, eligendi officia a excepturi possimus quis voluptas fugit distinctio eum quia ducimus. Aut, odit autem.</p>
+    <p>Estoy aprendiendo a programar páginas web y esta es mi primera pagina web.</p>
 </section>
 <section class="seccion-servicios">
     <h3>Aplicaciones web</h3>
     <img class="icono" src="img/message-chatbot.svg" alt="icono de aplicacion">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dolorum fugiat repellendus unde veniam fugit aut id natus suscipit labore. Voluptates labore dignissimos excepturi laboriosam quibusdam accusamus veritatis accusantium ad!</p>
+    <p>Hago todo tipo de aplicaciones web al gsuto de el consumidor.</p>
 </section>
 <section class="seccion-servicios">
     <h3>Woo commerce</h3>
     <img class="icono" src="img/businessplan.svg" alt="icono de dinero">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, iure alias unde eaque accusamus tempore dolorum hic officiis quasi expedita! Debitis, nostrum quae! Consequatur consequuntur, laudantium quod iusto accusantium magnam!</p>
+    <p>Trabajo tanto para particulares como para empresas.</p>
 </section>
 </div>
     </section>
@@ -64,7 +65,7 @@
 </div>
 
 
-     <section>
+     <section id="contacto">
         <h2 class="titulo-contacto" >Contacto</h2>
         <!-- Formulario -->
         <form class="formulario">
@@ -104,7 +105,9 @@
 
 </main>
 <footer>
-    <p>Todos los derechos reservados. Rubén Bermúdez</p>
+    <p>
+   <span>®</span> Todos los derechos reservados. Rubén Bermúdez
+   <a class="enlace" href="#Inicio">Inicio</a></p>
 </footer>
 </body>
 </html>
